@@ -5,7 +5,7 @@ NODE_VERSION="${1:-v16.9.1}"
 INStALL_DIR="${2:-${HOME}}"
 
 cd /tmp
-wget -q https://nodejs.org/dist/"${NODE_VERSION}"/node-"${NODE_VERSION}"-linux-x64.tar.gz
+wget https://nodejs.org/dist/"${NODE_VERSION}"/node-"${NODE_VERSION}"-linux-x64.tar.gz
 
 tar -zxf node-"${NODE_VERSION}"-linux-x64.tar.gz -C "${INStALL_DIR}"
 
